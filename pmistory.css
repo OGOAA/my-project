@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.GLO{
+    display: flex; 
+    justify-content: space-between;
+}
+i{
+    float: left;
+    padding-left: 10px;
+
+}
+body{
+    margin-bottom: 400px
+}
+#deb{
+    margin-left: -70px;
+    position: fixed;
+    top: 200px;
+        
+    }
+ 
+    /* @media all and (max-width:576px){
+    
+        #deb{
+            margin-left: -30px;
+        }  
+        .card ul{
+            list-style-type: none;
+        } */
+    /* } */
+
+
+    #dop .row{
+        border-bottom: 30px;
+    box-shadow: 2px 2px 10px  gray;
+    }
+

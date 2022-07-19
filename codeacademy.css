@@ -1,0 +1,38 @@
+.bg-light{
+    background-color: pink;
+}
+@media screen and (max-width:768px){
+
+}
+
+input{
+    padding: 20px;
+}
+
+.faith:hover{
+    background-color: white;
+    margin-left: 4px;
+    padding: 20px;
+    transition: 2s;
+}
+
+#grace{
+    border: 2px solid black;
+    background-color:white ;
+}
+#peace{
+    border: 2px solid black;
+    background-color:white ;
+
+}
+#joy{
+    border: 2px solid black;
+    background-color:white ;
+}
+#good{
+    border: 2px solid black;
+    background-color:white ;
+}
+body{
+    overflow-x: hidden;
+}

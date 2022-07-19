@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.first a{
+    text-decoration: none;
+}
+.first .second{
+    justify-content: center;
+}
+
+.first .third{
+    justify-content: flex-end;
+}
+.third i{
+    float: right;
+
+
+}
+.third{
+    float: right;
+}
+.second {
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 2px 1px 4px 1px;
+}
+img{
+    border-radius: 10px;
+}
+@media screen and (max-width: 990px){
+    .second{
+        display: none;
+    }
+    #tri{
+        display: none;
+    }
+}
+&nbsp; <i class="bi bi-globe"> &nbsp;</i><span><i class="bi bi-list"></i> <i class="bi bi-person-fill"></i></span>
+</span>
+

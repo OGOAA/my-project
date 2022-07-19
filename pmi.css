@@ -1,0 +1,104 @@
+.GLO{
+    display: flex; 
+    justify-content: space-between;
+}
+i{
+    float: left;
+    padding-left: 10px;
+
+}
+body{
+    margin-bottom: 400px
+}
+#deb{
+    margin-left: -70px;
+    position: fixed;
+    top: 200px;
+        
+    }
+ 
+    @media all and (max-width:576px){
+        #deb{
+            margin-left: -30px;
+        }  
+        .card ul{
+            list-style-type: none;
+        }
+}
+        
+        .dave{
+            transition: 300ms; 
+        }
+        .dave:hover{
+         transform: translate(20px);
+            color: rgb(22,22,151)
+        }
+        
+        .btn{
+            transition: 300ms; 
+            border-radius: 2px 
+        }
+        .btn:hover{
+         transform: translate(20px); 
+        }
+
+        .top{
+            transition: 500ms; 
+            border-radius: 2px 
+        }
+        .top:hover{
+         transform: translate(20px); 
+        }
+
+
+    .row .col-sm-12 img{
+        transition: 300ms;
+        margin-top: 2rem;
+        padding-bottom: 1rem; 
+            
+        
+    }
+    
+    #goa .row .col-sm-12 img:hover{
+        transform: scale(1.1);
+    }
+     
+    .row .col-sm-12 img{
+        transition: 300ms
+        
+    }
+    
+    #dav .row .col-sm-12 img:hover{
+        transform: scale(1.1);
+    }
+    
+    #goa .row .col-sm-12 h6:hover{
+        color: rgb(120,170,213);
+            
+    }
+    
+     
+    #goa .row .col-sm-12 h6{
+        font-size: 40px
+        
+    }
+    
+    #dav .row .col-sm-12 h6:hover{
+        color: rgb(120,170,213);
+            
+    }
+    
+     
+    #dav .row .col-sm-12 h6{
+        font-size: 40px
+        
+    }
+    
+        
+    
+     
+               
+
+    
+
+ 
