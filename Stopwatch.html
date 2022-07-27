@@ -1,0 +1,67 @@
+<body style="background-color: blueviolet;"> 
+    <div class="dabo">
+      <center>
+            <h3>A valid stop watch bluit with JAVASCRIPT </h3>
+      <h1 id="tao" style="color: white; border: 2px solid green; width: fit-content; border-radius: 10px; background-color: yellowgreen; padding: 10px;">
+          <span id="hour">00</span>
+          <span id="dabo">:</span>
+          <span id="min">00</span>
+          <span id="tao">:</span>
+          <span id="sec">00</span>
+          
+      </h1> 
+      <button onclick="result()" style="background-color: pink; color: white; border: none; border-radius: 20px; height: 30px; width: 50px;">start</button> 
+      <button onclick="stop()"   style="background-color: orangered; color: white; border: none; border-radius: 20px; height: 30px; width: 50px;">stop</button>
+      <button onclick="msg()"  style="background-color: blue; color: white; border: none; border-radius: 20px; height: 30px; width: 50px;">clear</button>
+      </center> <br><br>
+    </div>
+           
+       
+  
+  
+      
+        <script>
+            function olu(y){
+                 var kola= y + "";
+                 if(kola.length<2){
+                     return "0" + kola;
+                 } 
+                 else{return kola;}
+             } 
+            
+            var a=0;
+            var d=document.getElementById("hour");
+            var c= document.getElementById("min");
+            var b=document.getElementById("sec"); 
+            
+                function setTime(){
+                    a++;
+                    d.innerHTML=olu(parseInt(a/3600)) + "" + "hrs" ; 
+                    c.innerHTML=olu(parseInt ((a%3600)/60)) + "" + "mins";
+                    b.innerHTML=olu((a%60)) + "" + "secs"; 
+                    if(a==5){
+                        clearInterval(x);
+                    }
+                }  
+                
+                function result(){
+                  x=setInterval(setTime, 1000);
+                } 
+                function stop(){ 
+                    
+                        clearInterval(x);
+                    } 
+  
+                     function msg() { 
+                      document.getElementById("tao").innerHTML="00:00:00" ;   
+                      
+                                
+                              
+                               
+                     }
+                
+        </script>
+        
+    
+  </body>
+  </html>

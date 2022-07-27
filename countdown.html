@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+     <h1 id="Glory"></h1> 
+     <script>
+         var x = setInterval(function(){
+         var final= new Date("jan 1, 2023 12:00:00").getTime();
+         var now = new Date().getTime();
+         var distance = final - now;
+            
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                 document.getElementById("Glory").innerHTML = days + "d " + hours + "h "
+           + minutes + "m " + seconds + "s "; 
+              if (distance < 0) {
+              clearInterval(x);
+    document.getElementById("demo").innerHTML = "Gifimage";
+         }
+                                                                                
+        }, 1000);
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function addition(){
+            var a= Number(document.getElementById("two").value);
+            var b= Number(document.getElementById("one").value);
+            var c= a+b;
+            document.getElementById("olu").innerHTML="+";
+            if(isNaN(c)){
+            document.getElementById("ola").innerHTML="="+"invalid number";
+            }
+            else{
+                        document.getElementById("ola").innerHTML="="+ c;
+            }
+        }
+        function subtract(){
+            var a= Number(document.getElementById("two").value);
+            var b= Number(document.getElementById("one").value);
+            var c= a-b;
+            document.getElementById("olu").innerHTML="-";
+            if(isNaN(c)){
+                document.getElementById("ola").innerHTML="="-"invalid number"; 
+            }
+            else{
+                document.getElementById("olu").innerHTML="="- c; 
+            }
+
+        }
+        function multiplication(){
+            var a= Number(document.getElementById("two").value);
+            var b= Number(document.getElementById("one").value);
+            var c= a*b;
+            document.getElementById("olu").innerHTML= "*"
+            document.getElementById("ola").innerHTML= "=" + c
+        }
+        function division(){
+            var a= Number(document.getElementById("two").value);
+            var b= Number(document.getElementById("one").value);
+            var c= a/b;
+            document.getElementById("olu").innerHTML= "/"
+            document.getElementById("ola").innerHTML= "=" + c
+        }
+    </script>
+</head>
+
+<body style="background:orangered;">
+        <input type="text" id="two" style="background:gray; color:white;">
+        <span id="olu" style="color:white;"></span>  
+        <input type="text" id="one" style="background:gray; color: white;">
+        <span id="ola" style="color:white;"></span><br></br>
+        <button onclick="addition()" style="color:white; background-color: blue;">+</button>
+        <button onclick="subtract()" style="color: white; background-color: blue;">-</button>
+        <button onclick="multiplication()" style="color: white; background-color: blue;">*</button>
+        <button onclick="division()" style="color: white; background-color: blue;">/</button>
+</body>
+</html>

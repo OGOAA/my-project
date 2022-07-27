@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            padding-top: 200px;
+            font-size: 40px;
+            background-color: peru;
+            color: burlywood;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        h2{
+            border: 1px solid white;
+            border-radius: 20px 10px 8px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="olu"></h2>
+    <script>
+        var a= new Date().getHours;
+        switch(a){
+            case 5: 
+            document.getElementById("olu").innerHTML="it is time for fajr";
+            break;
+            case 6:
+            document.getElementById("olu").innerHTML="it is time for dhuhr"
+            break;n
+            case 16:
+            document.getElementById("olu").innerHTML="it is time for asr"
+            break;
+            case 19:
+            document.getElementById("olu").innerHTML="it is time for maghrib"
+            break;
+            case 20:
+            document.getElementById("olu").innerHTML="it is time for isha"
+            break;
+            default:
+            document.getElementById("olu").innerHTML="it is not time for prayer"
+        }
+
+    </script>
+</body>
+</html>
